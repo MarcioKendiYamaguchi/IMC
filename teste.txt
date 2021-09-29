@@ -1,0 +1,25 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+float imc;
+
+void calcula(float p, float a){
+    imc = (p/(pow(a, 2)));
+}
+
+int main()
+{
+    float p, a;
+    cout <<"Peso: ";
+    cin  >>p;
+    cout <<"Altura: ";
+    cin  >>a;
+
+    calcula(p, a);
+    cout <<"IMC: "<<imc<<endl;
+
+    return 0;
+}
+
